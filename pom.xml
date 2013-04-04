@@ -55,13 +55,13 @@
 				 <configuration>
 				 	<preloadSources>
 				 		<!-- using target instead of ${project.build.directory} works -->
-                        <source>/target/js/external/jquery.js</source>                       
+                        <!-- <source>/target/js/external/jquery.js</source>                       
                         <source>/target/js/external/angular.min.js</source>
-                        <source>/target/js/external/angular-mocks.js</source>
+                        <source>/target/js/external/angular-mocks.js</source> -->
 						<!-- below is not working when run jasmine:bdd-->
-                        <!--  <source>/${project.build.directory}/js/external/jquery.js</source>                    
+                         <source>/${project.build.directory}/js/external/jquery.js</source>                    
                         <source>/${project.build.directory}/js/external/angular.min.js</source>
-                        <source>/${project.build.directory}/js/external/angular-mocks.js</source>  -->
+                        <source>/${project.build.directory}/js/external/angular-mocks.js</source> 
                     </preloadSources>
 					<jsSrcDir>${project.basedir}/src/main/js/</jsSrcDir>
 					<jsTestSrcDir>${project.basedir}/src/test/js/</jsTestSrcDir>
